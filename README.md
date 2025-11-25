@@ -63,43 +63,6 @@ The goal is to centralize academic, business, and engagement data in one platfor
 - Trainer Feedback (CSV)
 - Social Media Extracts (Instagram, FB, YT, LinkedIn)
 
-<h2>
-Integrated-Learning-Analytics/
-│
-├── data/                      # Raw & Processed Data
-│   ├── students.csv
-│   ├── attendance.xlsx
-│   ├── fees.xlsx
-│   ├── trainers.csv
-│   └── social_media/*.csv
-│
-├── etl/                       # ETL Pipelines
-│   ├── clean_students.py
-│   ├── clean_attendance.py
-│   ├── merge_records.py
-│   └── clean_fees.py
-│
-├── models/                    # KPI Calculations
-│   ├── efficiency_score.py
-│   ├── dropout_model.py
-│   ├── bqi.py
-│   └── engagement_score.py
-│
-├── engagement/                # OpenCV Engine
-│   └── face_engagement_tracker.py
-│
-├── dashboards/                # Power BI Reports
-│   ├── student_performance.pbix
-│   ├── batch_quality.pbix
-│   ├── revenue_analytics.pbix
-│   └── trainer_analysis.pbix
-│
-└── reports/                   # Automated Excel MIS
-    ├── fee_pending.xlsx
-    ├── attendance_mis.xlsx
-    ├── monthly_performance.xlsx
-    └── top_performers.xlsx
-</h2>
 
 
 🧩 4. ETL Pipeline (Deep Technical Details)
@@ -123,6 +86,8 @@ Impact (Technical & Operational)
 ✔ Centralized academic + business + engagement data
 ✔ Real-time KPIs improve decision-making
 ✔ AI-based engagement adds behavioral insights
+
+
 🚀 11. Future Enhancements
 
 Deploy dashboards in Power BI Service
