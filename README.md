@@ -1,9 +1,23 @@
-Integrated Learning & Performance Analytics System
-Advanced Academic • Business • Engagement Intelligence Platform for Mindsprout | Aptech | BioskoolUP
-<p align="center"> <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB"> <img src="https://img.shields.io/badge/Power%20BI-0D1117?style=for-the-badge&logo=powerbi&logoColor=F2C811"> <img src="https://img.shields.io/badge/OpenCV-0D1117?style=for-the-badge&logo=opencv&logoColor=white"> <img src="https://img.shields.io/badge/Excel%20MIS-0D1117?style=for-the-badge&logo=microsoftexcel&logoColor=1D6F42"> </p> <p align="center"> <img src="https://img.shields.io/badge/Status-Production%20Ready-22c55e?style=flat-square"> <img src="https://img.shields.io/badge/Dataset-300%2B%20Learners-blue?style=flat-square"> </p>
-📘 Project Overview
+<h1 align="center">🌙 Integrated Learning & Performance Analytics System</h1>
+<h3 align="center">Unified Data Engineering • Business Intelligence • AI-Based Engagement Analytics</h3>
 
-The Integrated Learning & Performance Analytics System is a complete academic & business intelligence platform designed for:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB">
+  <img src="https://img.shields.io/badge/Power%20BI-0D1117?style=for-the-badge&logo=powerbi&logoColor=F2C811">
+  <img src="https://img.shields.io/badge/OpenCV-0D1117?style=for-the-badge&logo=opencv&logoColor=white">
+  <img src="https://img.shields.io/badge/Excel%20Automation-0D1117?style=for-the-badge&logo=microsoftexcel&logoColor=1D6F42">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Production Ready-22c55e">
+  <img src="https://img.shields.io/badge/Dataset-300%2B Students-blue">
+  <img src="https://img.shields.io/badge/Institutes-Mindsprout | Aptech | BioskoolUP-purple">
+</p>
+
+---
+📘 1. Project Overview
+
+A technical, end-to-end analytics ecosystem designed for:
 
 Mindsprout Career Hub
 
@@ -11,264 +25,110 @@ Aptech Learning Alambagh
 
 BioskoolUP
 
-This system unifies student performance analytics, batch quality monitoring, revenue tracking, trainer analysis, and social media growth into a single data-driven platform.
+The system integrates:
 
-It includes:
+🧩 ETL Pipelines (Python)
 
-ETL pipelines
+📊 Power BI Dashboards
 
-KPI engineering
+📈 KPI Engineering
 
-Behavior analysis using OpenCV
+🤖 OpenCV Engagement Detection
 
-Power BI dashboards
+🧾 Excel MIS Automation
 
-Excel MIS automation
+📲 Social Media Analytics
 
-Cross-platform social media analytics
+The goal is to centralize academic, business, and engagement data in one platform.
 
-Built as a fully operational intelligence ecosystem.
 
-🛠️ Tech Stack (Technical Overview)
-🔹 Core
 
-Python 3.10+
+### 🧠 Core Technologies
+- Python 3.10+
+- OpenCV 4.x
+- Power BI Desktop
+- Excel (VLOOKUP, Pivot, Automations)
 
-Power BI Desktop
+### 📦 Python Libraries
+- pandas, numpy  → ETL, Data Wrangling
+- matplotlib, seaborn → Visual Analytics
+- openpyxl → Excel Automation
+- opencv-python, cvzone → Engagement Detection
 
-OpenCV 4.x
+### 🗃 Data Inputs
+- Student Master (CSV)
+- Attendance Logs (Excel)
+- Fees Ledger (Excel)
+- Batch-Level Data (CSV)
+- Trainer Feedback (CSV)
+- Social Media Extracts (Instagram, FB, YT, LinkedIn)
 
-Excel (Advanced Reporting)
 
-🔹 Python Libraries
-Category	Libraries
-Data Manipulation	Pandas, NumPy
-Visualization	Matplotlib, Seaborn
-Automation	openpyxl, os, schedule
-AI / CV	OpenCV, cvzone
-🔹 Data Sources
-
-Student registration data
-
-Attendance logs
-
-Fee data
-
-Course & batch details
-
-Trainer rating sheets
-
-Social media analytics exports
-
-🗂️ Project Architecture
 Integrated-Learning-Analytics/
 │
-├── data/
+├── data/                      # Raw & Processed Data
 │   ├── students.csv
-│   ├── batches.csv
 │   ├── attendance.xlsx
 │   ├── fees.xlsx
 │   ├── trainers.csv
-│   └── social_media/
-│       ├── instagram.csv
-│       ├── youtube.csv
-│       ├── facebook.csv
-│       └── linkedin.csv
+│   └── social_media/*.csv
 │
-├── etl/
-│   ├── student_cleaner.py
-│   ├── batch_formatter.py
-│   ├── fee_cleaner.py
-│   └── attendance_processor.py
+├── etl/                       # ETL Pipelines
+│   ├── clean_students.py
+│   ├── clean_attendance.py
+│   ├── merge_records.py
+│   └── clean_fees.py
 │
-├── models/
-│   ├── dropout_score.py
+├── models/                    # KPI Calculations
 │   ├── efficiency_score.py
+│   ├── dropout_model.py
 │   ├── bqi.py
-│   └── engagement_model.py
+│   └── engagement_score.py
 │
-├── reports/
-│   ├── fee_pending_report.xlsx
-│   ├── attendance_mis.xlsx
-│   ├── monthly_performance.xlsx
-│   └── top_performers.xlsx
+├── engagement/                # OpenCV Engine
+│   └── face_engagement_tracker.py
 │
-├── dashboards/
+├── dashboards/                # Power BI Reports
 │   ├── student_performance.pbix
 │   ├── batch_quality.pbix
-│   ├── trainer_analysis.pbix
-│   └── revenue_dashboard.pbix
+│   ├── revenue_analytics.pbix
+│   └── trainer_analysis.pbix
 │
-└── engagement/
-    └── opencv_engagement_tracker.py
+└── reports/                   # Automated Excel MIS
+    ├── fee_pending.xlsx
+    ├── attendance_mis.xlsx
+    ├── monthly_performance.xlsx
+    └── top_performers.xlsx
 
-⭐ Key Features (Deep Technical Breakdown)
-🧩 1. Data Integration & Cleaning (ETL Pipelines)
-Tech Used: Pandas, NumPy
-Modules: student_cleaner.py, batch_formatter.py
-What It Does
 
-Merges 300+ records across 3 institutions
 
-Normalizes:
+🧩 4. ETL Pipeline (Deep Technical Details)
+✔ Data Cleansing
 
-Course titles
+Removed duplicates
 
-Batch codes
+Normalized course codes
 
-Attendance formats
+Standardized batch IDs
 
-Fee structures
+Cleaned date formats
 
-Data Cleaning Operations
+Fixed inconsistent attendance logs
 
-✔ Null handling
-✔ Categorical standardization
-✔ Duplicate removal
-✔ Outlier correction
-✔ Feature normalization
 
-Example snippet:
+df['attendance_rate'] = df['present'] / df['total_classes']
+df['fee_delay_days'] = (df['due_date'] - df['payment_date']).dt.days
 
-df['attendance_rate'] = df['attended_classes'] / df['total_classes']
-df['attendance_rate'] = df['attendance_rate'].fillna(0).clip(0, 1)
 
-📐 2. KPI Engineering (Custom Models)
-Model Files: dropout_score.py, bqi.py, efficiency_score.py
-KPIs Built
-KPI	Formula (Technical)
-Student Efficiency Score	Weighted blend of attendance, tests, submissions
-Dropout Risk Score	Logistic model using attendance & fee delay
-Batch Quality Index (BQI)	Mean(TrainerRating + AvgPerformance + EngagementScore)
-Active Learner Score	Activity frequency × Submission reliability
+Impact (Technical & Operational)
+✔ 70% manual reporting replaced with automated pipelines
+✔ Centralized academic + business + engagement data
+✔ Real-time KPIs improve decision-making
+✔ AI-based engagement adds behavioral insights
+🚀 11. Future Enhancements
 
-These KPIs feed into Power BI dashboards.
+Deploy dashboards in Power BI Service
 
-📊 3. Power BI Dashboards (4 Professional Pages)
-Dashboard Pages:
+Add a Streamlit web interface
 
-Student Performance Dashboard
-
-KPI cards
-
-Performance heatmap
-
-Attendance drill-down
-
-Batch Analysis Dashboard
-
-Batch-wise comparison
-
-Trainer effectiveness
-
-Batch Quality Index
-
-Trainer Rating Dashboard
-
-Rating trends
-
-Student feedback distribution
-
-Revenue & Business Analytics
-
-Monthly revenue
-
-Fee pending stats
-
-Enrolment vs revenue correlation
-
-Power BI uses DAX Measures, for example:
-
-Attendance % = DIVIDE(SUM(Attendance[Present]), SUM(Attendance[Total]))
-
-📲 4. Social Media Analytics Engine
-Platforms Included
-
-Instagram
-
-Facebook
-
-YouTube
-
-LinkedIn
-
-Metrics Extracted
-
-Engagement Rate
-
-Reach Growth
-
-Impressions
-
-Follower Velocity
-
-CTR on posts
-
-Python Example:
-df['engagement_rate'] = (df['likes'] + df['comments']) / df['followers'] * 100
-
-
-Outputs feed into a Power BI Social Dashboard.
-
-🤖 5. OpenCV Engagement Analyzer (AI-Based)
-Tech: OpenCV, cvzone, Haar Cascades
-Functionality
-
-Detects students’ faces in real time
-
-Classifies engagement as:
-
-Focused
-
-Neutral
-
-Distracted
-
-Engagement Score Formula
-Engagement = (Focused Frames / Total Frames) × 100
-
-Example Code:
-faces = detector.detectMultiScale(gray, 1.3, 5)
-engagement_score = focused_frames / total_frames
-
-
-Results are merged into student analytics.
-
-🧾 6. Excel Automation (MIS System)
-Automated Reports Generated:
-
-Fee Pending Report
-
-Attendance MIS
-
-Top Performer List
-
-Monthly Analysis Sheets
-
-Tools Used:
-
-openpyxl
-
-Conditional formatting
-
-Auto-filtering
-
-Dynamic formulas
-
-🎯 Impact (Business + Technical ROI)
-✔ Reduced manual reporting load by 70%
-✔ Unified academic + revenue + engagement analytics
-✔ Improved decision-making using data-driven KPIs
-✔ Enabled real-time class engagement tracking
-✔ Provided institute-level growth intelligence
-🚀 Future Enhancements
-
-Deploy dashboards to Microsoft Power BI Service
-
-Build a Streamlit student performance portal
-
-Add NLP-based student feedback analysis
-
-Integrate smartwatch/biometric data for engagement
-
-Develop a mobile version
+Integrate NLP for feedback analysis
