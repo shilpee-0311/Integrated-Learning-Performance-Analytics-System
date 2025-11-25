@@ -63,7 +63,7 @@ The goal is to centralize academic, business, and engagement data in one platfor
 - Trainer Feedback (CSV)
 - Social Media Extracts (Instagram, FB, YT, LinkedIn)
 
-
+<h2>
 Integrated-Learning-Analytics/
 │
 ├── data/                      # Raw & Processed Data
@@ -99,7 +99,7 @@ Integrated-Learning-Analytics/
     ├── attendance_mis.xlsx
     ├── monthly_performance.xlsx
     └── top_performers.xlsx
-
+</h2>
 
 
 🧩 4. ETL Pipeline (Deep Technical Details)
@@ -116,8 +116,6 @@ Cleaned date formats
 Fixed inconsistent attendance logs
 
 
-df['attendance_rate'] = df['present'] / df['total_classes']
-df['fee_delay_days'] = (df['due_date'] - df['payment_date']).dt.days
 
 
 Impact (Technical & Operational)
