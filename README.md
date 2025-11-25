@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Production Ready-22c55e">
   <img src="https://img.shields.io/badge/Dataset-300%2B Students-blue">
-  <img src="https://img.shields.io/badge/Institutes-Mindsprout | Aptech | BioskoolUP-purple">
+  
 </p>
 
 ---
